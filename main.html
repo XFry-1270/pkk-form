@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>P K K</h1>
+      <p>Penilaian Kinerja Karyawan</p>
+      <div>
+        <button>Keluar</button>
+      </div>
+    </nav>
+    <section class="inputData">
+      <form method="post" name="pkk-form">
+        <label for="nama">Nama Karyawan:</label>
+        <input type="text" id="nama" name="nama-karyawan" />
+        <label for="jabatan">Jabatan:</label>
+        <input type="text" id="jabatan" name="jabatan" />
+        <label for="tanggalpenilaian">Tanggal Penilaian</label>
+        <input type="date" id="tanggalpenilaian" name="tanggal-penilaian" />
+        <table>
+          <thead>
+            <tr>
+              <td>Aspek Nilai</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Inisiatif</td>
+              <td><input type="radio" name="inisiatif" value="1" /></td>
+              <td><input type="radio" name="inisiatif" value="2" /></td>
+              <td><input type="radio" name="inisiatif" value="3" /></td>
+              <td><input type="radio" name="inisiatif" value="4" /></td>
+              <td><input type="radio" name="inisiatif" value="5" /></td>
+            </tr>
+            <tr>
+              <td>Kehadiran & Ketepatan waktu</td>
+              <td><input type="radio" name="kehadiran" value="1" /></td>
+              <td><input type="radio" name="kehadiran" value="2" /></td>
+              <td><input type="radio" name="kehadiran" value="3" /></td>
+              <td><input type="radio" name="kehadiran" value="4" /></td>
+              <td><input type="radio" name="kehadiran" value="5" /></td>
+            </tr>
+            <tr>
+              <td>Kerja sama</td>
+              <td><input type="radio" name="kerja-sama" value="1" /></td>
+              <td><input type="radio" name="kerja-sama" value="2" /></td>
+              <td><input type="radio" name="kerja-sama" value="3" /></td>
+              <td><input type="radio" name="kerja-sama" value="4" /></td>
+              <td><input type="radio" name="kerja-sama" value="5" /></td>
+            </tr>
+            <tr>
+              <td>Problem solving</td>
+              <td><input type="radio" name="problem-solving" value="1" /></td>
+              <td><input type="radio" name="problem-solving" value="2" /></td>
+              <td><input type="radio" name="problem-solving" value="3" /></td>
+              <td><input type="radio" name="problem-solving" value="4" /></td>
+              <td><input type="radio" name="problem-solving" value="5" /></td>
+            </tr>
+            <tr>
+              <td>Kemampuan berkomunikasi</td>
+              <td>
+                <input type="radio" name="kemampuan-berkomunikasi" value="1" />
+              </td>
+              <td>
+                <input type="radio" name="kemampuan-berkomunikasi" value="2" />
+              </td>
+              <td>
+                <input type="radio" name="kemampuan-berkomunikasi" value="3" />
+              </td>
+              <td>
+                <input type="radio" name="kemampuan-berkomunikasi" value="4" />
+              </td>
+              <td>
+                <input type="radio" name="kemampuan-berkomunikasi" value="5" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <textarea
+          name="catatan"
+          placeholder="Catatan"
+          name="catatan"
+        ></textarea>
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+    </section>
+    <section class="inputNilai"></section>
+    <script src="script.js"></script>
+  </body>
+</html>
